@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { TableEvents } from './components/TableEvents/TableEvents';
+import { ControlPanel } from './components/ControlPanel/ControlPanel';
+import { categoryType } from './components/TableEvents/interfases';
+import './App.scss';
 
 function App() {
+  const [searchValue, setSearchValue] = React.useState('');
+  const [category, setCategory] = React.useState<categoryType>('transport');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ControlPanel
+        category={category}
+        setCategory={setCategory}
+        searchValue={searchValue}
+        setSearchValue={setSearchValue}
+      />
+      <TableEvents category={category} searchValue={searchValue} />
     </div>
   );
 }
