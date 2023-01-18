@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Event-table/static/css/main.0a7b1513.css",
+    "main.js": "/Event-table/static/js/main.606061b3.js",
+    "index.html": "/Event-table/index.html",
+    "main.0a7b1513.css.map": "/Event-table/static/css/main.0a7b1513.css.map",
+    "main.606061b3.js.map": "/Event-table/static/js/main.606061b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a7b1513.css",
+    "static/js/main.606061b3.js"
+  ]
+}
